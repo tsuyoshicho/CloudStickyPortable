@@ -44,7 +44,23 @@ Licence：　CC Attribution-NonCommercial-ShareAlike 3.0
 
 <pre>
 (root)
-
+├─Launcher Environment
+│  └─App
+│      ├─AppInfo
+│      │  └─Launcher
+│      ├─CloudSticky
+│      └─DefaultData
+├─note
+│  └─Evernote Sticky Portable Setup_files
+└─Release Environment
+    └─App
+        ├─AppInfo
+        │  └─Launcher
+        ├─CloudSticky
+        │  ├─CloudStickySwitch_lib
+        │  └─CloudSticky_lib
+        └─DefaultData
+            └─Sticky
 </pre>
 
 補足情報
