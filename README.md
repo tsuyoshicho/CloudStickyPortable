@@ -2,12 +2,28 @@ CloudSticky (old EvernoteStickyPortable)
 ========================================
 
 CloudSticky is Evernote Sticky tool. and portable installer packaging (PortableApps.com style)
-
+CloudSticky PortableはEvernoteを利用するCloudStickyをポータブル化したものです。
 
 Status
 ------
 
 Rename repository URL
+
+Licence
+-------
+
+<pre>
+Original and Launcher/Installer
+GNU General Public License v3 (GPLv3) 
+</pre>
+
+<pre>
+Task tray icon(icon.png) is modified under the following license.
+
+Author：　barrymieny(http://barrymieny.deviantart.com/)
+Icon Set:　Isabi4Icons
+Licence：　CC Attribution-NonCommercial-ShareAlike 3.0 
+</pre>
 
 手順
 ----
@@ -29,7 +45,7 @@ Rename repository URL
 
 補足情報
 --------
-* Dataディレクトリに配置される設定は自分の設定を記載する必要がある
+* Dataディレクトリに配置される設定は自分の設定を記載する必要がある(現在の実装では一度アプリからセットアップすればOKのはず)
 
 オリジナル作者様URL
 -------------------

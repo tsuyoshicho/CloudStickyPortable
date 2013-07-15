@@ -1,15 +1,15 @@
 ﻿<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="keywords" content="Evernote Sticky">
-<meta name="description" content="Evernote Sticky Readme Document">
-<title>Evernote Sticky Readme</title>
+<meta name="keywords" content="CloudSticky">
+<meta name="description" content="CloudSticky Readme Document">
+<title>CloudSticky Readme</title>
 </head>
 <body>
-<h1>Evernote Sticky</h1>
+<h1>CloudSticky</h1>
 <p>
 <pre>
-StickyはEvernoteと連動するデスクトップ常駐付箋です．
+CloudStickyはEvernoteと連動するデスクトップ常駐付箋です．
 ネットに接続している複数PCで同じ付箋を共有できます．
 
 Evernoteのノートに特定のタグを付けておけば，そのノートが自動的にデスクトップに表示されます．
@@ -20,25 +20,30 @@ Windows,Macで動作確認．
 正式対応ではないですがLinux(Ubuntu)でも一応動作しました．
 
 ●インストール方法
-evernote-sticky.zipを解凍する．
-Sticky.jar：本体
-Sticky.ini：設定ファイル
+cloudsticky-xxx.zipを解凍する．
+CloudSticky.jar：本体
+CloudSticky.ini：設定ファイル
 
 【注意】古いバージョンを新しいバージョンで上書きする場合は，古いcacheフォルダを一度削除してください．
 
 ●使用方法
 
-Sticky.jarをダブルクリックしてEvernoteのユーザID,パスワードを入力すると
-付箋が表示されます(デフォルトでは最大10件)．
+まずCloudSticky.jarをダブルクリックしてください．ダイアログが表示され，Evernoteの認証トークンが要求されます．
+「Get AccessToken」ボタンを押すとブラウザが起動します．
+Evernoteにログインして，CloudStickyのアクセスを承認するボタンを押してください．するとブラウザにはAccessTokenが表示されます．
+その文字列をダイアログにコピー＆ペーストして「Login」ボタンを押してください．
+
+正常にEvernoteのサーバと接続されれば，付箋が表示されます．
+(デフォルトでは最大10件)．
 
 あらかじめEvernoteから付箋としてデスクトップに表示したいノートに特定のタグをつけておけば，その付箋が表示されます．
-デフォルトでは!(半角のエクスクラメーションマーク)がSticky用のタグになっています．
+デフォルトでは!(半角のエクスクラメーションマーク)が付箋用タグになっています．
 または，タスクトレイアイコンや付箋の右クリックメニュー，タスクトレイアイコンのダブルクリックから新規付箋を作成できます．
 
 一定時間経つと同期します(デフォルトでは15分)．
 タスクトレイアイコンの右クリックメニューからも同期できます．
 
-ウィンドウのxボタンから閉じてもStickyプログラム本体は動作したままです．
+ウィンドウのxボタンから閉じてもプログラム本体は動作したままです．
 付箋の再表示やプログラムの完全終了はタスクトレイアイコンの右クリックメニューから行ってください．
 
 編集する場合は各付箋を右クリックしてPlain Text/XMLで編集してください．
@@ -51,34 +56,30 @@ PCの画面解像度変更等によって付箋が画面外に出てしまった
 タスクトレイアイコンの右クリックメニューからResetを選んでください．
 キャッシュを削除し，Evernoteに再同期して付箋を整列しなおします．
 
-
 ●ホットキーによる付箋の最前面・最背面への移動
-StickySwitch.jarをダブルクリックすると，
-自PCで起動中のSticky.jarと通信を行い，付箋を最前面・最背面に切り替えます．
+CloudStickySwitch.jarをダブルクリックすると，
+自PCで起動中のCloudSticky.jarと通信を行い，付箋を最前面・最背面に切り替えます．
 
-StickySwitch.jar起動のホットキーを設定すれば表示切り替えをキーボード一発で行えます．
+CloudStickySwitch.jar起動のホットキーを設定すれば表示切り替えをキーボード一発で行えます．
 
-Windowsの場合：
+ホットキー設定：Windowsの場合
 
 StartMenuShortcut.vbsをダブルクリックしてスタートメニューにショートカットを作成します．
-次に，スタート-全てのプログラム-Evernote Sticky-StickySwitchを右クリックしてプロパティを開きます．(注意：StickyではなくStickySwitchです．)
+次に，スタート-全てのプログラム-CloudSticky-CloudStickySwitchを右クリックしてプロパティを開きます．(注意：CloudStickyではなくCloudStickySwitchです．)
 ショートカットタブのショートカットキーの項目にフォーカスさせて，希望するショートカットキー(たとえばCtrl+Alt+1)を設定します．
 
-後は，Sticky.jarが起動している状態で指定したショートカットキーを押せば付箋の最前面・最背面移動ができます．
+後は，CloudSticky.jarが起動している状態で指定したショートカットキーを押せば付箋の最前面・最背面移動ができます．
 
-Macの場合：
-StickySwitch.jarの起動をキーボードにアサインできればWindowsと同様に使えるはず．
+ホットキー設定：Macの場合：
+CloudStickySwitch.jarの起動をキーボードにアサインできればWindowsと同様に使えるはず．
 
 ●カスタマイズ
-Evernoteアカウント情報，付箋とみなすEvernoteのタグ，付箋の色，Evernoteとの同期間隔などが変更可能です．
+付箋とみなすEvernoteのタグ，付箋の色やフォント，同期間隔などが変更可能です．
 タスクトレイアイコンの右クリックメニューから[Settings]を選んでください．
 
-●追加予定機能
-Stickyからのリッチテキスト編集，付箋削除(ノートからタグのみ削除)
-Stickyの設定をEvernoteのノートから読み込む．
-
 ●その他
-Sticky.jarのショートカットを作ってスタートアップに入れておくと便利．
+起動時に自動的にCloudSticky.jarが実行されるように，
+スタートアップにもCloudSticky.jarのショートカットを登録しておくと便利です．
 </pre>
 </body>
 </html>
