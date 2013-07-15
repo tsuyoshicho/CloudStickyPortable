@@ -1,9 +1,12 @@
-EvernoteStickyPortable
-======================
+CloudSticky (old EvernoteStickyPortable)
+========================================
 
-Evernote Sticky Portable env(PortableApps.com style)
+CloudSticky is Evernote Sticky tool. and portable installer packaging (PortableApps.com style)
+
+[URL SF.jp](http://sourceforge.jp/projects/evernote-sticky/)
 
 Status
 ------
 
-Currently obsoleted.
+Rename repository URL
+
