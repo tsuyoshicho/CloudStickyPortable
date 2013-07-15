@@ -25,6 +25,10 @@ Icon Set:　Isabi4Icons
 Licence：　CC Attribution-NonCommercial-ShareAlike 3.0 
 </pre>
 
+現在のターゲットバージョン
+--------------------------
+* CloudSticky 1.0
+
 手順
 ----
 0. PortableAppsからInstaller,Launcher,NSIS,jPortableが必要になるので、セットアップしておく。
