@@ -1,7 +1,8 @@
 CloudSticky (old EvernoteStickyPortable)
 ========================================
 
-CloudSticky is Evernote Sticky tool. and portable installer packaging (PortableApps.com style)
+CloudSticky is Evernote Sticky tool. and this project is portable installer/launcher packaging (PortableApps.com style)
+
 CloudSticky PortableはEvernoteを利用するCloudStickyをポータブル化したものです。
 
 Notice
