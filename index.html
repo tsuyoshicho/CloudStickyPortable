@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Cloudstickyportable by tsuyoshicho</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Cloudstickyportable</h1>
+        <p>Setup Environment for  CloudSticky (old name Evernote Sticky) Portable (PortableApps.com style)</p>
+
+        <p class="view"><a href="https://github.com/tsuyoshicho/CloudStickyPortable">View the Project on GitHub <small>tsuyoshicho/CloudStickyPortable</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/tsuyoshicho/CloudStickyPortable/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/tsuyoshicho/CloudStickyPortable/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/tsuyoshicho/CloudStickyPortable">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="cloudsticky-old-evernotestickyportable" class="anchor" href="#cloudsticky-old-evernotestickyportable"><span class="octicon octicon-link"></span></a>CloudSticky (old EvernoteStickyPortable)</h1>
+
+<p>CloudSticky is Evernote Sticky tool. and this project is portable installer/launcher packaging (PortableApps.com style)</p>
+
+<p>CloudSticky PortableはEvernoteを利用するCloudStickyをポータブル化したものです。</p>
+
+<h2>
+<a name="notice" class="anchor" href="#notice"><span class="octicon octicon-link"></span></a>Notice</h2>
+
+<p><em>利用するにはjPortableのインストールが必要になります。</em></p>
+
+<h2>
+<a name="status" class="anchor" href="#status"><span class="octicon octicon-link"></span></a>Status</h2>
+
+<p>Rename repository URL</p>
+
+<h2>
+<a name="licence" class="anchor" href="#licence"><span class="octicon octicon-link"></span></a>Licence</h2>
+
+<p>Launcher/Installer
+GPLv3</p>
+
+<pre>
+Original
+GNU General Public License v3 (GPLv3) 
+</pre>
+
+<pre>
+Task tray icon(icon.png) is modified under the following license.
+
+Author：　barrymieny(http://barrymieny.deviantart.com/)
+Icon Set:　Isabi4Icons
+Licence：　CC Attribution-NonCommercial-ShareAlike 3.0 
+</pre>
+
+<h2>
+<a name="%E7%8F%BE%E5%9C%A8%E3%81%AE%E3%82%BF%E3%83%BC%E3%82%B2%E3%83%83%E3%83%88%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3" class="anchor" href="#%E7%8F%BE%E5%9C%A8%E3%81%AE%E3%82%BF%E3%83%BC%E3%82%B2%E3%83%83%E3%83%88%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3"><span class="octicon octicon-link"></span></a>現在のターゲットバージョン</h2>
+
+<ul>
+<li>CloudSticky 1.0(内蔵)</li>
+</ul><h2>
+<a name="%E6%89%8B%E9%A0%86" class="anchor" href="#%E6%89%8B%E9%A0%86"><span class="octicon octicon-link"></span></a>手順</h2>
+
+<ol>
+<li>PortableAppsからInstaller,Launcher,NSIS,jPortableが必要になるので、セットアップしておく。</li>
+<li>各ランチャ作成環境をルートとして、PortableApps Launcherでランチャを作成。</li>
+<li>リリース環境に実行ファイル両方をコピー。(一度作成しておけば更新されないかぎりはそのままでよい)</li>
+<li>ファイルをCloudStickyに配置、データはDefaultDataに入れる(icon,CloudSticky.ini)</li>
+<li>help.htmlの記述を更新。ツールのReadmeから転写。</li>
+<li>リリース環境をルートとして、PortableApps Installerでインストーラを作成。</li>
+<li>インストーラがルートにできる。</li>
+</ol><h2>
+<a name="%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA%E6%A7%8B%E6%88%90" class="anchor" href="#%E3%83%87%E3%82%A3%E3%83%AC%E3%82%AF%E3%83%88%E3%83%AA%E6%A7%8B%E6%88%90"><span class="octicon octicon-link"></span></a>ディレクトリ構成</h2>
+
+<pre>
+(root)
+├─Launcher Environment
+│  └─App
+│      ├─AppInfo
+│      │  └─Launcher
+│      ├─CloudSticky
+│      └─DefaultData
+├─note
+│  └─Evernote Sticky Portable Setup_files
+└─Release Environment
+    └─App
+        ├─AppInfo
+        │  └─Launcher
+        ├─CloudSticky
+        │  ├─CloudStickySwitch_lib
+        │  └─CloudSticky_lib
+        └─DefaultData
+            └─Sticky
+</pre>
+
+<h2>
+<a name="%E8%A3%9C%E8%B6%B3%E6%83%85%E5%A0%B1" class="anchor" href="#%E8%A3%9C%E8%B6%B3%E6%83%85%E5%A0%B1"><span class="octicon octicon-link"></span></a>補足情報</h2>
+
+<ul>
+<li>Dataディレクトリに配置される設定は自分の設定を記載する必要がある(現在の実装では一度アプリからセットアップすればOKのはず)</li>
+<li>現在アプリを内蔵しているが、リポジトリが公開された際にsubmoduleとして登録します。</li>
+</ul><h2>
+<a name="%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB%E4%BD%9C%E8%80%85%E6%A7%98url" class="anchor" href="#%E3%82%AA%E3%83%AA%E3%82%B8%E3%83%8A%E3%83%AB%E4%BD%9C%E8%80%85%E6%A7%98url"><span class="octicon octicon-link"></span></a>オリジナル作者様URL</h2>
+
+<ul>
+<li><a href="http://sourceforge.jp/projects/evernote-sticky/">SF.jp Project Page</a></li>
+</ul><h2>
+<a name="%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E5%85%AC%E9%96%8B%E8%80%85%E3%81%AB%E3%82%88%E3%82%8B%E3%83%90%E3%82%A4%E3%83%8A%E3%83%AA%E5%85%AC%E9%96%8Burl%E3%81%82%E3%81%BE%E3%82%8A%E6%8E%A8%E5%A5%A8%E3%81%97%E3%81%BE%E3%81%9B%E3%82%93" class="anchor" href="#%E3%83%AA%E3%83%9D%E3%82%B8%E3%83%88%E3%83%AA%E5%85%AC%E9%96%8B%E8%80%85%E3%81%AB%E3%82%88%E3%82%8B%E3%83%90%E3%82%A4%E3%83%8A%E3%83%AA%E5%85%AC%E9%96%8Burl%E3%81%82%E3%81%BE%E3%82%8A%E6%8E%A8%E5%A5%A8%E3%81%97%E3%81%BE%E3%81%9B%E3%82%93"><span class="octicon octicon-link"></span></a>リポジトリ公開者によるバイナリ公開URL(あまり推奨しません)</h2>
+
+<p>短縮URL <a href="http://goo.gl/qjmYx">http://goo.gl/qjmYx</a> ( <a href="https://drive.google.com/folderview?id=0B0YTfSPDI7f6VUxfS25TZWFVYTQ&amp;usp=sharing">https://drive.google.com/folderview?id=0B0YTfSPDI7f6VUxfS25TZWFVYTQ&amp;usp=sharing</a> )</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/tsuyoshicho">tsuyoshicho</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
